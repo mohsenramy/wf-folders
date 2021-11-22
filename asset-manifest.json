@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/wf-folders/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/wf-folders/static/js/main.7dc4109a.chunk.js",
+    "main.js.map": "/wf-folders/static/js/main.7dc4109a.chunk.js.map",
+    "runtime-main.js": "/wf-folders/static/js/runtime-main.4d24c1d8.js",
+    "runtime-main.js.map": "/wf-folders/static/js/runtime-main.4d24c1d8.js.map",
+    "static/js/2.04ca99b3.chunk.js": "/wf-folders/static/js/2.04ca99b3.chunk.js",
+    "static/js/2.04ca99b3.chunk.js.map": "/wf-folders/static/js/2.04ca99b3.chunk.js.map",
+    "static/js/3.dc2ec648.chunk.js": "/wf-folders/static/js/3.dc2ec648.chunk.js",
+    "static/js/3.dc2ec648.chunk.js.map": "/wf-folders/static/js/3.dc2ec648.chunk.js.map",
+    "index.html": "/wf-folders/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/wf-folders/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.04ca99b3.chunk.js.LICENSE.txt": "/wf-folders/static/js/2.04ca99b3.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/wf-folders/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4d24c1d8.js",
+    "static/js/2.04ca99b3.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.7dc4109a.chunk.js"
+  ]
+}
