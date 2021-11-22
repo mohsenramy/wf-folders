@@ -1,0 +1,78 @@
+[
+  {
+    "type": "folder",
+    "name": "Porsche",
+    "children": [
+      {
+        "type": "folder",
+        "name": "Bugatti",
+        "children": [
+          {
+            "type": "file",
+            "name": "open_source_granite_ability.mpe",
+            "size": 4542898
+          },
+          {
+            "type": "file",
+            "name": "berkshire.mp2a",
+            "size": 6183370
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "Chevrolet",
+    "children": [
+      {
+        "type": "file",
+        "name": "connecting_direct_soft.mp2a",
+        "size": 4326297
+      },
+      {
+        "type": "file",
+        "name": "account.mpe",
+        "size": 476105
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "Hyundai",
+    "children": [
+      {
+        "type": "file",
+        "name": "software_dynamic_sleek.m3a",
+        "size": 802487
+      },
+      {
+        "type": "file",
+        "name": "invoice_interactions_synergize.shtml",
+        "size": 8414065
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "Hyundai",
+    "children": [
+      {
+        "type": "folder",
+        "name": "Ferrari",
+        "children": [
+          {
+            "type": "file",
+            "name": "wireless_buckinghamshire.jpg",
+            "size": 8308511
+          },
+          {
+            "type": "file",
+            "name": "indiana.png",
+            "size": 895583
+          }
+        ]
+      }
+    ]
+  }
+]
