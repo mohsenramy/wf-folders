@@ -1,7 +1,7 @@
 import { format } from "./formatters";
 
-const helpers = {
+const utils = {
   format,
 };
 
-export default helpers;
+export default utils;

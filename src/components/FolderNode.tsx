@@ -22,12 +22,12 @@ export const FolderNode = ({ name, children }: FolderProps) => {
       <Box
         sx={{
           display: "flex",
-          flexDirection: { xs: "row", md: "row" },
+          // flexDirection: { xs: "row", md: "row" },
           alignItems: "center",
           alignContent: "center",
 
           // overflow: "hidden",
-          borderRadius: "2",
+          // borderRadius: "2",
           // boxShadow: 1,
           cursor: "pointer",
           // fontWeight: "bold",
@@ -51,13 +51,21 @@ export const FolderNode = ({ name, children }: FolderProps) => {
             <FolderOpenTwoToneIcon />
           </>
         )}
-        <Typography variant='subtitle1' fontWeight='bold'>
+        <Typography
+          variant='body1'
+          fontWeight='500'
+          style={{ padding: "5px 10px 5px 10px" }}>
           {name}
         </Typography>
       </Box>
       <Box>
         {!isCollapsed ? (
-          <Box style={{ marginLeft: 30, height: isCollapsed ? 0 : "auto" }}>
+          <Box
+            sx={{
+              marginLeft: "60px",
+              height: isCollapsed ? 0 : "auto",
+              boxShadow: "1",
+            }}>
             {children}
           </Box>
         ) : null}

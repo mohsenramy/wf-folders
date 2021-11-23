@@ -1,13 +1,15 @@
 import FolderNode from "./FolderNode";
 import FileNode from "./FileNode";
-import treeData from "./data.json";
 import React, { useCallback, useEffect, useState } from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 import utils from "../utils";
 import { FilesDataType, TreeNodeType } from "../Interfaces/Tree.types";
 
-export const FolderTree = () => {
-  const [foldersTreeData, setFoldersTreeData] = useState<
+export type FolderTreeProps = {
+  foldersStructureData?: TreeNodeType[];
+};
+export const FolderTree = (props: FolderTreeProps) => {
+  const [foldersTreeStructure, setFoldersTreeStructure] = useState<
     React.ReactElement[] | null
   >([] as React.ReactElement[]);
   const [treeFiles, setTreeFiles] = useState<FilesDataType>({
@@ -41,31 +43,42 @@ export const FolderTree = () => {
   );
 
   useEffect(() => {
-    if (treeData) {
+    // if (treeData) {
+    //   // const tree = ;
+    //   setFoldersTreeStructure(parseData(treeData, treeFiles));
+    // }
+    if (props.foldersStructureData) {
       // const tree = ;
-      setFoldersTreeData(parseData(treeData, treeFiles));
+      setFoldersTreeStructure(parseData(props.foldersStructureData, treeFiles));
     }
-    return () => {};
-  }, [parseData, treeFiles]);
+    return () => {
+      setTreeFiles({ count: 0, size: 0 });
+    };
+  }, [parseData, props.foldersStructureData, treeFiles]);
 
   return (
-    <Box
-      component='div'
-      sx={{
-        p: 2,
-        border: "1px dashed grey",
-        // width: "80%",
-        msAlignSelf: "ceneter",
-        paddingBottom: "30px",
-      }}>
-      {foldersTreeData}
-      <Box sx={{ borderTop: "1px solid" }}>
-        <Typography>Total Files: {treeFiles.count}</Typography>
-        <Typography>
-          Total Filesize: {utils.format.formatBytes(treeFiles.size)}
+    <>
+      <Box
+        component='div'
+        sx={{
+          p: 5,
+          // border: "1px dashed grey",
+          // width: "80%",
+          msAlignSelf: "ceneter",
+          paddingBottom: "20px",
+        }}>
+        {foldersTreeStructure}
+      </Box>
+      <Divider variant='middle' sx={{ borderBottomWidth: 2 }} />
+      <Box sx={{ padding: "20px" }}>
+        <Typography variant='subtitle1' fontWeight='500'>
+          Total Files: {treeFiles.count}
+        </Typography>
+        <Typography variant='subtitle1' fontWeight='500'>
+          Total Files Size: {utils.format.formatBytes(treeFiles.size)}
         </Typography>
       </Box>
-    </Box>
+    </>
   );
 };
 
