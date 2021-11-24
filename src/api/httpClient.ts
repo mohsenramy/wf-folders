@@ -2,8 +2,7 @@ import axios from "axios";
 
 const axiosClient = axios.create();
 
-axiosClient.defaults.baseURL =
-  "https://dev21.becollective.com/api/v2/coding-challenges/dirs";
+axiosClient.defaults.baseURL = "https://dev21.becollective.com/api/v2/coding-challenges/dirs";
 
 axiosClient.defaults.headers.common = {
   "Content-Type": "application/json",

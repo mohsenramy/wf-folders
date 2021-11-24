@@ -2,37 +2,34 @@ import FolderNode from "./FolderNode";
 import FileNode from "./FileNode";
 import React, { useCallback, useEffect, useState } from "react";
 import { Box, Divider, Typography } from "@mui/material";
-import utils from "../utils";
-import { FilesDataType, TreeNodeType } from "../Interfaces/Tree.types";
+import utils from "../../utils";
+import { FilesDataType, TreeNodeType } from "../../types/Tree.types";
 
-export type FolderTreeProps = {
+export type FoldersTreeProps = {
   foldersStructureData?: TreeNodeType[];
 };
-export const FolderTree = (props: FolderTreeProps) => {
-  const [foldersTreeStructure, setFoldersTreeStructure] = useState<
-    React.ReactElement[] | null
-  >([] as React.ReactElement[]);
+export const FoldersTree = (props: FoldersTreeProps) => {
+  const [foldersTreeStructure, setFoldersTreeStructure] = useState<React.ReactElement[] | null>(
+    [] as React.ReactElement[]
+  );
   const [treeFiles, setTreeFiles] = useState<FilesDataType>({
     count: 0,
     size: 0,
   });
 
   const parseData = useCallback(
-    (
-      data: TreeNodeType[],
-      filesData: FilesDataType
-    ): React.ReactElement[] | null => {
+    (data: TreeNodeType[], filesData: FilesDataType): React.ReactElement[] | null => {
       const folderTree = data.map((node, index) => {
         if (node.type === "folder") {
           return (
-            <FolderNode key={index} name={node.name}>
+            <FolderNode key={index} folderName={node.name}>
               {parseData(node.children as TreeNodeType[], filesData)}
             </FolderNode>
           );
         } else {
           filesData.count++;
           filesData.size += node.size ?? 0;
-          return <FileNode key={index} name={node.name} size={node.size} />;
+          return <FileNode key={index} fileName={node.name} size={node.size} />;
         }
       });
 
@@ -64,13 +61,13 @@ export const FolderTree = (props: FolderTreeProps) => {
           p: 5,
           // border: "1px dashed grey",
           // width: "80%",
-          msAlignSelf: "ceneter",
-          paddingBottom: "20px",
+          // msAlignSelf: "ceneter",
+          margin: "1rem 0 0 0",
         }}>
         {foldersTreeStructure}
       </Box>
       <Divider variant='middle' sx={{ borderBottomWidth: 2 }} />
-      <Box sx={{ padding: "20px" }}>
+      <Box sx={{ margin: "1rem 0 0 2.5rem" }}>
         <Typography variant='subtitle1' fontWeight='500'>
           Total Files: {treeFiles.count}
         </Typography>
@@ -82,4 +79,4 @@ export const FolderTree = (props: FolderTreeProps) => {
   );
 };
 
-export default FolderTree;
+export default FoldersTree;

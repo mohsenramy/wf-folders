@@ -1,25 +1,25 @@
 import { useState } from "react";
-import FolderTwoToneIcon from "@mui/icons-material/FolderTwoTone";
-import FolderOpenTwoToneIcon from "@mui/icons-material/FolderOpenTwoTone";
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import KeyboardArrowRightTwoToneIcon from "@mui/icons-material/KeyboardArrowRightTwoTone";
-import KeyboardArrowDownTwoToneIcon from "@mui/icons-material/KeyboardArrowDownTwoTone";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import FolderIcon from "@mui/icons-material/Folder";
+import FolderOpenIcon from "@mui/icons-material/FolderOpen";
 
 export type FolderProps = {
-  name: string;
+  folderName: string;
   children?: React.ReactNode | undefined;
 };
 
-export const FolderNode = ({ name, children }: FolderProps) => {
+export const FolderNode = ({ folderName, children }: FolderProps) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
-
   const onFolderNodeClick = () => {
     setIsCollapsed(!isCollapsed);
   };
   return (
     <>
       <Box
+        data-testid='FolderNodeBox'
         sx={{
           display: "flex",
           // flexDirection: { xs: "row", md: "row" },
@@ -30,11 +30,11 @@ export const FolderNode = ({ name, children }: FolderProps) => {
           // borderRadius: "2",
           // boxShadow: 1,
           cursor: "pointer",
-          // fontWeight: "bold",
+
           "&:hover": {
             // backgroundColor: "primary.low",
             // color: "primary.main",
-            opacity: [0.7, 0.7, 0.7],
+            opacity: [1.0, 1.0, 0.7],
           },
         }}
         // flexDirection={"row"}
@@ -42,29 +42,29 @@ export const FolderNode = ({ name, children }: FolderProps) => {
         onClick={onFolderNodeClick}>
         {isCollapsed ? (
           <>
-            <KeyboardArrowRightTwoToneIcon />
-            <FolderTwoToneIcon />
+            <KeyboardArrowRightIcon color='action' />
+            <FolderIcon color='action' />
           </>
         ) : (
           <>
-            <KeyboardArrowDownTwoToneIcon />
-            <FolderOpenTwoToneIcon />
+            <KeyboardArrowDownIcon color='action' />
+            <FolderOpenIcon color='action' />
           </>
         )}
         <Typography
           variant='body1'
           fontWeight='500'
-          style={{ padding: "5px 10px 5px 10px" }}>
-          {name}
+          style={{ margin: "0.3rem 0.6rem 0.3rem 0.6rem" }}>
+          {folderName}
         </Typography>
       </Box>
       <Box>
         {!isCollapsed ? (
           <Box
             sx={{
-              marginLeft: "60px",
+              marginLeft: "3.75rem",
               height: isCollapsed ? 0 : "auto",
-              boxShadow: "1",
+              // boxShadow: "1",
             }}>
             {children}
           </Box>
