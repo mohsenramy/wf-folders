@@ -1,0 +1,148 @@
+[
+  {
+    "type": "folder",
+    "name": "Ford",
+    "children": [
+      {
+        "type": "file",
+        "name": "won_sensor_turn_key.shtml",
+        "size": 7767064
+      },
+      {
+        "type": "folder",
+        "name": "Audi",
+        "children": [
+          {
+            "type": "file",
+            "name": "overriding_bedfordshire.pdf",
+            "size": 7645175
+          },
+          {
+            "type": "file",
+            "name": "hampshire_response_png.gif",
+            "size": 3686182
+          },
+          {
+            "type": "folder",
+            "name": "Mercedes Benz",
+            "children": [
+              {
+                "type": "file",
+                "name": "small.mp4v",
+                "size": 3003044
+              },
+              {
+                "type": "file",
+                "name": "payment_kids_international.m1v",
+                "size": 787149
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "Toyota",
+    "children": [
+      {
+        "type": "folder",
+        "name": "Dodge",
+        "children": [
+          {
+            "type": "folder",
+            "name": "Land Rover",
+            "children": [
+              {
+                "type": "file",
+                "name": "parse_input_service_desk.m2v",
+                "size": 4300367
+              }
+            ]
+          },
+          {
+            "type": "folder",
+            "name": "Fiat",
+            "children": [
+              {
+                "type": "file",
+                "name": "dynamic_roi.gif",
+                "size": 1363029
+              },
+              {
+                "type": "file",
+                "name": "cotton_sms_navigate.mpg4",
+                "size": 4723421
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "national_small.html",
+        "size": 7718008
+      },
+      {
+        "type": "file",
+        "name": "planner.jpeg",
+        "size": 7844143
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "Jaguar",
+    "children": [
+      {
+        "type": "folder",
+        "name": "Smart",
+        "children": [
+          {
+            "type": "folder",
+            "name": "Hyundai",
+            "children": [
+              {
+                "type": "file",
+                "name": "schemas_specialist_table.wav",
+                "size": 3893059
+              }
+            ]
+          },
+          {
+            "type": "file",
+            "name": "plastic_savings_whiteboard.gif",
+            "size": 1485039
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "mobility_vatu.pdf",
+        "size": 7221082
+      },
+      {
+        "type": "file",
+        "name": "dominica.png",
+        "size": 6074286
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "Volvo",
+    "children": [
+      {
+        "type": "file",
+        "name": "account.htm",
+        "size": 8217218
+      },
+      {
+        "type": "file",
+        "name": "loan_lithuanian_envisioneer.mp2",
+        "size": 576993
+      }
+    ]
+  }
+]
