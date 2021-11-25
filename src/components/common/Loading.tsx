@@ -1,4 +1,4 @@
-import { CircularProgress, LinearProgress, Typography } from "@mui/material";
+import { CircularProgress, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 
 type LoadingProps = {

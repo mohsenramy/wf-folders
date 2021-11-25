@@ -1,4 +1,4 @@
-import { Box, Divider, Link, Typography } from "@mui/material";
+import { Box, Divider, Link } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 const Footer = () => {
   return (
@@ -13,7 +13,11 @@ const Footer = () => {
         // width: "100%",
       }}>
       <Divider variant='fullWidth' />
-      <Box display={"flex"} flexDirection={"row"} justifyContent={"flex-end"} paddingTop={".5rem"}>
+      <Box
+        display={"flex"}
+        flexDirection={"row"}
+        justifyContent={"flex-end"}
+        padding={".5rem 0.5rem 0 0"}>
         {/* <Box>THE BOX </Box> */}
         {/* <Box
           sx={

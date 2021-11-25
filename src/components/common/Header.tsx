@@ -1,5 +1,4 @@
 import { Box, useTheme } from "@mui/material";
-import MoreHorizSharpIcon from "@mui/icons-material/MoreHorizSharp";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 const Header = () => {
   const theme = useTheme();

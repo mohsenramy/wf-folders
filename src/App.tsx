@@ -69,7 +69,7 @@ function App() {
                 <FoldersTree foldersStructureData={emptyTree} />
               </Grid>
             </Grid>
-            <Grid container xs={12} direction='row' justifyContent='flex-end' alignItems='center'>
+            <Grid container direction='row' justifyContent='flex-end' alignItems='center'>
               <Footer />
             </Grid>
           </Box>
