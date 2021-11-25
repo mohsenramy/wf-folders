@@ -1,5 +1,11 @@
 {
   "name": "wf-folders",
+  "jest": {
+    "testMatch": [
+      "<rootDir>/src/**/*.test.{js,jsx,ts,tsx}",
+      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,ts,tsx}"
+    ]
+  },
   "version": "0.1.0",
   "homepage": "https://mohsenramy.github.io/wf-folders",
   "private": true,
@@ -37,12 +43,6 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
-  },
-  "jest": {
-    "testMatch": [
-      "<rootDir>/src/**/*.test.{js,jsx,ts,tsx}",
-      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,ts,tsx}"
     ]
   },
   "browserslist": {

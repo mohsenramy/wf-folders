@@ -63,7 +63,7 @@ describe("<DynamicData />", () => {
     render(<DynamicData />);
 
     expect(screen.queryByText(/Fetching data/i)).toBeFalsy(); // We don't want the loading flag to be displayed
-    screen.getByText(/Unable to fetch folders structure data/i);
+    screen.getByText(/Unable to fetch folders data/i);
     screen.getByText(/Retry/i);
   });
 

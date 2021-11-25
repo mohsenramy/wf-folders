@@ -42,12 +42,12 @@ export const FolderNode = ({ folderName, children }: FolderProps) => {
         onClick={onFolderNodeClick}>
         {isCollapsed ? (
           <>
-            <KeyboardArrowRightIcon color='action' />
+            <KeyboardArrowRightIcon color='action' fontSize='small' />
             <FolderIcon color='action' />
           </>
         ) : (
           <>
-            <KeyboardArrowDownIcon color='action' />
+            <KeyboardArrowDownIcon color='action' fontSize='small' />
             <FolderOpenIcon color='action' />
           </>
         )}

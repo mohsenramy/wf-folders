@@ -1,6 +1,6 @@
 import { Box, useTheme } from "@mui/material";
 import MoreHorizSharpIcon from "@mui/icons-material/MoreHorizSharp";
-
+import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 const Header = () => {
   const theme = useTheme();
 
@@ -9,13 +9,12 @@ const Header = () => {
       sx={{
         borderRadius: "0.3125rem 0.3125rem 0 0",
         backgroundColor: theme.palette.grey[500],
-        // backgroundColor: "#9DADBA",
-        padding: "0 0.3125rem 0 10 ",
+        color: theme.palette.grey[700],
+        padding: "0.25rem 0 0 0.5rem ",
       }}>
-      <MoreHorizSharpIcon
-        style={{ color: theme.palette.grey[700] }}
-        fontSize='large'
-      />
+      <FiberManualRecordIcon fontSize='small' />
+      <FiberManualRecordIcon fontSize='small' />
+      <FiberManualRecordIcon fontSize='small' />
     </Box>
   );
 };

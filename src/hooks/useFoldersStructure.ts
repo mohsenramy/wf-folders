@@ -4,7 +4,7 @@ import { getFoldersStructureData } from "../services/foldersStructure";
 export const useFoldersStructure = () => {
   return useQuery("FolderStructure", getFoldersStructureData, {
     retry: false,
-    // enabled: false,
+    refetchOnWindowFocus: false,
     retryOnMount: false,
   });
 };

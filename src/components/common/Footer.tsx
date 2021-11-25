@@ -1,4 +1,4 @@
-import { Box, Container, Divider, Grid, Link } from "@mui/material";
+import { Box, Divider, Link, Typography } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 const Footer = () => {
   return (
@@ -6,17 +6,25 @@ const Footer = () => {
       sx={{
         // backgroundColor: "#9DADBA",
         // borderTopWidth: "1px",
-        padding: "0.625rem",
+        flex: 1,
+        flexDirection: "row",
+        justifyContent: "space-between",
+        margin: "0.5rem",
+        // width: "100%",
       }}>
       <Divider variant='fullWidth' />
-      <Box
-        component='div'
-        sx={{
-          flexDirection: "row",
-          justifyContent: "center",
-          alignItems: "normal",
-          // alignContent: "baseline",
-        }}>
+      <Box display={"flex"} flexDirection={"row"} justifyContent={"flex-end"} paddingTop={".5rem"}>
+        {/* <Box>THE BOX </Box> */}
+        {/* <Box
+          sx={
+            {
+              // flexDirection: "row",
+              // justifyContent: "flex-end",
+              // alignItems: "normal",
+              // alignContent: "end",
+            }
+          }> */}
+
         <Link
           href='https://github.com/mohsenramy/wf-folders' //https://git.io/J1AcH
           underline='hover'
@@ -30,6 +38,7 @@ const Footer = () => {
           }}>
           <GitHubIcon fontSize='inherit' /> GitHub Repo
         </Link>
+        {/* </Box> */}
       </Box>
     </Box>
   );
