@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/wf-folders/static/css/main.af7f921a.chunk.css",
-    "main.js": "/wf-folders/static/js/main.fd6732be.chunk.js",
-    "main.js.map": "/wf-folders/static/js/main.fd6732be.chunk.js.map",
-    "runtime-main.js": "/wf-folders/static/js/runtime-main.fbaa1b7a.js",
-    "runtime-main.js.map": "/wf-folders/static/js/runtime-main.fbaa1b7a.js.map",
+    "main.css": "/wf-folders/static/css/main.35d45f80.chunk.css",
+    "main.js": "/wf-folders/static/js/main.3d59f60b.chunk.js",
+    "main.js.map": "/wf-folders/static/js/main.3d59f60b.chunk.js.map",
+    "runtime-main.js": "/wf-folders/static/js/runtime-main.6951cea9.js",
+    "runtime-main.js.map": "/wf-folders/static/js/runtime-main.6951cea9.js.map",
     "static/css/2.3bf1031d.chunk.css": "/wf-folders/static/css/2.3bf1031d.chunk.css",
-    "static/js/2.0050b482.chunk.js": "/wf-folders/static/js/2.0050b482.chunk.js",
-    "static/js/2.0050b482.chunk.js.map": "/wf-folders/static/js/2.0050b482.chunk.js.map",
-    "static/js/3.825470ed.chunk.js": "/wf-folders/static/js/3.825470ed.chunk.js",
-    "static/js/3.825470ed.chunk.js.map": "/wf-folders/static/js/3.825470ed.chunk.js.map",
+    "static/js/2.4e26559a.chunk.js": "/wf-folders/static/js/2.4e26559a.chunk.js",
+    "static/js/2.4e26559a.chunk.js.map": "/wf-folders/static/js/2.4e26559a.chunk.js.map",
+    "static/js/3.143341da.chunk.js": "/wf-folders/static/js/3.143341da.chunk.js",
+    "static/js/3.143341da.chunk.js.map": "/wf-folders/static/js/3.143341da.chunk.js.map",
     "index.html": "/wf-folders/index.html",
     "static/css/2.3bf1031d.chunk.css.map": "/wf-folders/static/css/2.3bf1031d.chunk.css.map",
-    "static/css/main.af7f921a.chunk.css.map": "/wf-folders/static/css/main.af7f921a.chunk.css.map",
-    "static/js/2.0050b482.chunk.js.LICENSE.txt": "/wf-folders/static/js/2.0050b482.chunk.js.LICENSE.txt",
+    "static/css/main.35d45f80.chunk.css.map": "/wf-folders/static/css/main.35d45f80.chunk.css.map",
+    "static/js/2.4e26559a.chunk.js.LICENSE.txt": "/wf-folders/static/js/2.4e26559a.chunk.js.LICENSE.txt",
     "static/media/300.css": "/wf-folders/static/media/roboto-vietnamese-300-normal.af9afdc1.woff2",
     "static/media/400.css": "/wf-folders/static/media/roboto-vietnamese-400-normal.c0bec65d.woff2",
     "static/media/500.css": "/wf-folders/static/media/roboto-vietnamese-500-normal.b8e494da.woff2",
     "static/media/700.css": "/wf-folders/static/media/roboto-vietnamese-700-normal.3096f18a.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.fbaa1b7a.js",
+    "static/js/runtime-main.6951cea9.js",
     "static/css/2.3bf1031d.chunk.css",
-    "static/js/2.0050b482.chunk.js",
-    "static/css/main.af7f921a.chunk.css",
-    "static/js/main.fd6732be.chunk.js"
+    "static/js/2.4e26559a.chunk.js",
+    "static/css/main.35d45f80.chunk.css",
+    "static/js/main.3d59f60b.chunk.js"
   ]
 }
