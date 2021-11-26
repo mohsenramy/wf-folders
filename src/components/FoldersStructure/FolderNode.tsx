@@ -6,12 +6,12 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import FolderIcon from "@mui/icons-material/Folder";
 import FolderOpenIcon from "@mui/icons-material/FolderOpen";
 
-export type FolderProps = {
+export type FolderNodeProps = {
   folderName: string;
   children?: React.ReactNode | undefined;
 };
 
-export const FolderNode = ({ folderName, children }: FolderProps) => {
+export const FolderNode = ({ folderName, children }: FolderNodeProps) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
   const onFolderNodeClick = () => {
     setIsCollapsed(!isCollapsed);
@@ -54,7 +54,7 @@ export const FolderNode = ({ folderName, children }: FolderProps) => {
         {!isCollapsed ? (
           <Box
             sx={{
-              marginLeft: "3.75rem",
+              marginLeft: "2rem",
               height: isCollapsed ? 0 : "auto",
             }}>
             {children}

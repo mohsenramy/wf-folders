@@ -65,8 +65,8 @@ export const FoldersTree = ({ foldersStructureData }: FoldersTreeProps) => {
         <Box
           component='div'
           sx={{
-            p: 5,
-            margin: "1rem 0 0 0",
+            padding: "1rem",
+            margin: "1rem 0 0 1rem",
           }}>
           {structureBuilder.structure}
         </Box>
@@ -76,7 +76,7 @@ export const FoldersTree = ({ foldersStructureData }: FoldersTreeProps) => {
         <Loading loadingMessage='Building folders tree...' />
       )}
       <Divider variant='middle' sx={{ borderBottomWidth: 3 }} />
-      <Box sx={{ margin: "1rem 0 0 2.5rem" }}>
+      <Box sx={{ margin: "1rem 0 1rem 2.5rem" }}>
         <Typography variant='subtitle1' fontWeight='500'>
           Total Files: {structureBuilder.files.count}
         </Typography>

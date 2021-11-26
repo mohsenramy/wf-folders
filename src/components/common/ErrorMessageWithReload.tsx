@@ -13,7 +13,7 @@ const ErrorMessageWithReload = ({
       variant='standard'
       sx={{
         alignSelf: "center",
-        margin: "1.3rem 4rem 1.3rem 4rem",
+        margin: "0rem 0rem 3rem 0rem",
         columns: 1,
       }}
       action={

@@ -13,12 +13,10 @@ export const FileNode = ({ fileName, size }: FileNodeProps) => {
         alignItems: "center",
       }}>
       <DescriptionIcon color='action' />
-      <Typography variant='body1' noWrap style={{ margin: "0.3rem 0.6rem 0.3rem 0.6rem" }}>
+      <Typography variant='body1' style={{ margin: "0.3rem 0.6rem 0.3rem 0.6rem" }}>
         {utils.format.fileWithoutExtension(fileName)}
       </Typography>
-      <Typography variant='subtitle2' noWrap>
-        {utils.format.formatBytes(Number(size ?? 0))}
-      </Typography>
+      <Typography variant='subtitle2'>{utils.format.formatBytes(Number(size ?? 0))}</Typography>
     </Box>
   );
 };

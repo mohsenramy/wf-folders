@@ -8,7 +8,6 @@ import Footer from "./components/common/Footer";
 import theme from "./styles/theme";
 
 const queryClient = new QueryClient();
-
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
@@ -34,11 +33,13 @@ function App() {
               }}>
               <Grid
                 item
-                xs={12}
+                xs={11}
                 md={10}
                 sx={{
                   justifyContent: "center",
                   alignItems: "center",
+                  overflowX: "scroll",
+                  margin: "0 .5rem 0 .5rem",
                 }}>
                 <DynamicData />
               </Grid>
