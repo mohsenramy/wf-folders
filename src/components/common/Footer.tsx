@@ -3,6 +3,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 const Footer = () => {
   return (
     <Box
+      data-testid='Footer'
       sx={{
         flex: 1,
         flexDirection: "row",

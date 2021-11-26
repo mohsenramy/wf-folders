@@ -5,6 +5,7 @@ const Header = () => {
 
   return (
     <Box
+      data-testid='Header'
       sx={{
         borderRadius: "0.3125rem 0.3125rem 0 0",
         backgroundColor: theme.palette.grey[500],

@@ -1,4 +1,3 @@
-import "./App.css";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { Box, Container, Grid } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
@@ -38,7 +37,7 @@ function App() {
                 sx={{
                   justifyContent: "center",
                   alignItems: "center",
-                  overflowX: "scroll",
+                  overflowX: "auto",
                   margin: "0 .5rem 0 .5rem",
                 }}>
                 <DynamicData />
