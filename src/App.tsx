@@ -5,6 +5,10 @@ import DynamicData from "./components/DynamicData";
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import theme from "./styles/theme";
+import DataFetcher from "./components/DataFetcher";
+import { useFoldersStructure } from "./hooks/useFoldersStructure";
+import FoldersTree from "./components/FoldersStructure/FoldersTree";
+import { TreeNodeType } from "./types/Tree.types";
 
 const queryClient = new QueryClient();
 function App() {
@@ -41,6 +45,11 @@ function App() {
                   margin: "0 .5rem 0 .5rem",
                 }}>
                 <DynamicData />
+                <DataFetcher<TreeNodeType>
+                  queryName='FolderStructure'
+                  queryFunc={useFoldersStructure}
+                  component={FoldersTree}
+                />
               </Grid>
             </Grid>
             <Grid container direction='row' justifyContent='flex-end' alignItems='center'>

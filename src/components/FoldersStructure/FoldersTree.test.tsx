@@ -30,7 +30,7 @@ const mockedFoldersData = [
 
 describe("<FoldersTree />", () => {
   it("Renders without crashing", () => {
-    render(<FoldersTree foldersStructureData={mockedFoldersData} />);
+    render(<FoldersTree serverData={mockedFoldersData} />);
   });
 
   it("Displays loading indicator", () => {
@@ -39,7 +39,7 @@ describe("<FoldersTree />", () => {
   });
 
   it("Displays error message if Data is corrupted", () => {
-    render(<FoldersTree foldersStructureData={[{}] as TreeNodeType[]} />);
+    render(<FoldersTree serverData={[{}] as TreeNodeType[]} />);
     expect(screen.queryByText(/Building folders tree.../i)).toBeFalsy();
     screen.getByText(/Data processing failed, try again/i);
     screen.getByText(/Retry/i);
@@ -48,7 +48,7 @@ describe("<FoldersTree />", () => {
   });
 
   it("Display correct tree, folders opens and correct files count & size", async () => {
-    render(<FoldersTree foldersStructureData={mockedFoldersData} />);
+    render(<FoldersTree serverData={mockedFoldersData} />);
 
     expect(screen.queryByText(/Building folders tree.../i)).toBeFalsy();
     expect(screen.queryByText(/test_file/i)).toBeFalsy();

@@ -12,7 +12,7 @@ function DynamicData() {
   if (isError) {
     return <ErrorMessageWithReload message={"Unable to fetch folders data"} />;
   }
-  return <FolderTree foldersStructureData={data} />;
+  return <FolderTree serverData={data} />;
 }
 
 export default DynamicData;

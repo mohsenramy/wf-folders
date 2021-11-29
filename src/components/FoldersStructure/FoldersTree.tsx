@@ -7,18 +7,16 @@ import { FilesDataType, TreeNodeType } from "../../types/Tree.types";
 import { CreateFolderStructureResult } from "../../types/Structure.types";
 import ErrorMessageWithReload from "../common/ErrorMessageWithReload";
 import Loading from "../common/Loading";
+import { DataPresenter } from "../DataFetcher";
 
-export type FoldersTreeProps = {
-  foldersStructureData?: TreeNodeType[];
-};
-
+type FoldersTreeProps = DataPresenter<TreeNodeType>;
 export const initialState: CreateFolderStructureResult = {
   structure: null,
   files: { count: 0, size: 0 },
   error: null,
 };
 
-export const FoldersTree = ({ foldersStructureData }: FoldersTreeProps) => {
+export const FoldersTree = (props: FoldersTreeProps) => {
   const [structureBuilder, setStructureBuilder] = useState<CreateFolderStructureResult>({
     structure: null,
     files: { count: 0, size: 0 },
@@ -54,10 +52,10 @@ export const FoldersTree = ({ foldersStructureData }: FoldersTreeProps) => {
   );
 
   useEffect(() => {
-    if (foldersStructureData && Array.isArray(foldersStructureData)) {
-      setStructureBuilder(crateFolderStructure(foldersStructureData, structureBuilder.files));
+    if (props.serverData && Array.isArray(props.serverData)) {
+      setStructureBuilder(crateFolderStructure(props.serverData, structureBuilder.files));
     }
-  }, [crateFolderStructure, foldersStructureData, structureBuilder.files]);
+  }, [crateFolderStructure, props.serverData, structureBuilder.files]);
 
   return (
     <>
