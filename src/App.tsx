@@ -6,9 +6,12 @@ import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import theme from "./styles/theme";
 import DataFetcher from "./components/DataFetcher";
-import { useFoldersStructure } from "./hooks/useFoldersStructure";
+import { useCurrentWeather } from "./hooks/useCurrentWeather";
 import FoldersTree from "./components/FoldersStructure/FoldersTree";
 import { TreeNodeType } from "./types/Tree.types";
+import Weather from "./components/Weather/Weather";
+import { useFoldersStructure } from "./hooks/useFoldersStructure";
+import { WeatherData } from "./types/Weather.types";
 
 const queryClient = new QueryClient();
 function App() {
@@ -44,11 +47,16 @@ function App() {
                   overflowX: "auto",
                   margin: "0 .5rem 0 .5rem",
                 }}>
-                <DynamicData />
+                {/* <DynamicData /> */}
                 <DataFetcher<TreeNodeType>
                   queryName='FolderStructure'
                   queryFunc={useFoldersStructure}
                   component={FoldersTree}
+                />
+                <DataFetcher<WeatherData>
+                  queryName='WeatherCurrent'
+                  queryFunc={useCurrentWeather}
+                  component={Weather}
                 />
               </Grid>
             </Grid>

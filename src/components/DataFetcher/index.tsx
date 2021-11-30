@@ -3,19 +3,12 @@ import { UseQueryResult } from "react-query";
 import ErrorMessageWithReload from "../common/ErrorMessageWithReload";
 import Loading from "../common/Loading";
 
-// type DataPresentationComponenets = {
-//   ComponentProps:{FoldersTreeProps: TreeNodeType[]}
-//   Component:
-// }
 export type DataPresenter<T> = { serverData: T[] | undefined };
 
 type DataFetcherProps<T> = {
   queryName: string;
-  queryFunc: () => UseQueryResult;
-  // component: FunctionComponent<DataPresenter<T>>;
-  // component: <T extends DataPresenter<T>>(props: T) => React.ReactNode;
+  queryFunc: () => UseQueryResult<T[], unknown>; //| {() => UseQueryResult<T[], unknown>};
   component: (props: PropsWithChildren<DataPresenter<T>>) => JSX.Element;
-  // component: ({_data: TreeNodeType[] | undefined}) => JSX.Element;
 };
 
 // const DataFetcher = ({ queryName, queryFunc, component }: DataFetcherProps) => {

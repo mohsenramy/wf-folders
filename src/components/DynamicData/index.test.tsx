@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { useFoldersStructure } from "../../hooks/useFoldersStructure";
+import { useFoldersStructure } from "../../hooks/useCurrentWeather";
 import DynamicData from ".";
 import userEvent from "@testing-library/user-event";
 import utils from "../../utils";
