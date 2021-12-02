@@ -4,6 +4,7 @@ export type Weather = {
   description: string;
 };
 
+// export type WeatherDatum = {
 export type WeatherData = {
   rh: number;
   pod: string;
@@ -42,3 +43,7 @@ export type WeatherData = {
   elev_angle: number;
   app_temp: number;
 };
+
+// export type WeatherData = {
+//   data: WeatherDatum;
+// };

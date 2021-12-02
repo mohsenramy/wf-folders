@@ -8,9 +8,9 @@ axiosWeatherClient.defaults.headers.common = {
   "Content-Type": "application/json",
   Accept: "application/json",
   "x-rapidapi-host": "weatherbit-v1-mashape.p.rapidapi.com",
-  "x-rapidapi-key": "aade45209cmshfd5cead6b15fdbap112615jsn1ae9ab208948",
+  "x-rapidapi-key": String(process.env.REACT_APP_WEATHER_API_KEY),
 };
-
+console.log(process.env.REACT_APP_WEATHER_API_KEY);
 // All request will wait 2 seconds before timeout
 // axiosClient.defaults.timeout = 2000;
 
@@ -18,6 +18,7 @@ axiosWeatherClient.defaults.headers.common = {
 
 axiosWeatherClient.interceptors.request.use(
   async (config) => {
+    console.log(config);
     return config;
   },
   (error) => {
@@ -28,6 +29,7 @@ axiosWeatherClient.interceptors.request.use(
 
 axiosWeatherClient.interceptors.response.use(
   (response) => {
+    console.info(response);
     return response;
   },
   (error) => {

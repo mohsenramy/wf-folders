@@ -48,6 +48,11 @@ function App() {
                   margin: "0 .5rem 0 .5rem",
                 }}>
                 {/* <DynamicData /> */}
+                {/* <DataFetcher<TreeNodeType>
+                  queryName='FolderStructure'
+                  queryFunc={useFoldersStructure}
+                  component={Weather}
+                /> */}
                 <DataFetcher<TreeNodeType>
                   queryName='FolderStructure'
                   queryFunc={useFoldersStructure}
@@ -56,6 +61,7 @@ function App() {
                 <DataFetcher<WeatherData>
                   queryName='WeatherCurrent'
                   queryFunc={useCurrentWeather}
+                  queryFuncArgs={[53.33306, -6.24889]}
                   component={Weather}
                 />
               </Grid>
